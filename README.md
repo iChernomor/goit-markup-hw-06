@@ -1,2 +1,3 @@
-# goit-markup-hw-01
-1 ДЗ HTML + CSS Bootcamp
+# goit-markup-hw-06
+
+ДЗ HTML + CSS Bootcamp

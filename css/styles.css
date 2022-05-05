@@ -4,8 +4,15 @@
   --font-header-footer: #2f303a;
   --white-color-text: #ffffff;
   --accent-color: #2196f3;
-  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  --animation: 1000ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
+
+/* Селектори
+  
+  a b - потомок
+  a > b - ребенок
+  a + b - следующий сосед
+  a ~ b - любой след сосед*/
 
 body {
   background-color: #ffffff;
@@ -314,6 +321,7 @@ margin-right: 0;
   opacity: 1;
   transition: opacity var(--animation);
   z-index: 2;
+ 
 }
 
 .is-hidden {
@@ -332,7 +340,10 @@ margin-right: 0;
   background-color: #ffffff;
   transition: transform var(--animation);
   z-index: 3;
+  margin: 40px;
+
 }
+
 
 .button-close {
   position: absolute;
@@ -360,6 +371,187 @@ margin-right: 0;
 .icon-window-close {
   fill: currentColor;
 }
+
+/* Window. Разметка форм */
+
+.form {
+  width: 100%;
+  outline: 1px solid rgb(13, 165, 20);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.15;
+  /* identical to box height */
+    letter-spacing: 0.01em;
+    color: var(--secondary-text-color)
+}
+
+.form-title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin: 40px 40px 12px;
+
+}
+.form-field {
+  position: relative;
+  /* outline: 1px solid rgb(83, 13, 175); */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+background: #FFFFFF;
+border-radius: 4px;
+}
+
+.form-field input {
+  margin: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px 40px;
+  display: flex;
+  cursor: pointer;
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2); */
+}
+
+.form-field input::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  
+}
+
+.fotm-options input[type='checkbox'] {
+
+}
+/* .form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-50px);
+}
+.form-field:placeholder-shown {
+  background-color: tomato;
+} 
+відїзджає label при фокусі inputа */
+
+/* .form-input:hover, */
+.form-input:focus {
+  border-color:  var(--accent-color);
+ color: #2f303a;
+}
+.form-icon + .form-icon-name {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 45%;
+  left: 12px;
+  cursor: pointer;
+  /* display: inline-block; */
+  width: 18px;
+  height: 18px;
+
+  /* align-items: center;
+  justify-content: center; */
+
+  /* border: 1px solid #000000; */
+  /* transform: rotate(90deg); */
+
+}
+
+/* .form-input:focus ~ .form-icon {
+ background-color: var(--accent-color);
+ transition: var(--animation);
+ вибирає всі форм ікон які є в цьому класі
+} */
+.form-field:focus-within > .form-icon + .form-icon-name {
+color: var(--accent-color);
+fill: var(--accent-color);
+transition: var(--animation);
+}
+
+.comment {
+
+  display: flex;
+}
+.form-field textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+}
+.form-field textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+
+}
+.checkbox {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  position: absolute;
+}
+.checkbox-icon {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 4px;
+}
+.label {
+  display: block;
+}
+.checkbox:checked + .checkbox-icon {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url(../images/iconcheck.svg);
+  background-size: contain;
+  background-origin: content-box;
+}
+.agreement {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+}
+.agreement a {
+  color: var(--accent-color);
+  text-decoration-line: underline;
+}
+.button-form {
+
+  color: var(--white-color-text);
+  background-color: var(--accent-color);
+  margin: 0 auto;
+  display: block;
+  font-family: "Roboto";
+  padding: 10px 55px;
+  border-radius: 4px;
+  min-width: 200px;
+  border: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color var(--animation),
+  color var(--animation);
+  margin-top: 30px;
+  
+}
+
 
 /* About */
 .about-title {
@@ -740,6 +932,52 @@ fill: #fff;
 .social-link:hover .socia-icon,
 .social-link:focus .socia-icon {
   fill: var(--accent-color);
+}
+  /* Subscribe */
+  .button-subscribe {
+  
+    color: var(--white-color-text);
+    background-color: var(--accent-color);
+    margin: 0 auto;
+    display: block;
+    font-family: "Roboto";
+    padding: 10px 55px;
+    border-radius: 4px;
+    min-width: 200px;
+    border: transparent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: background-color var(--animation),
+      color var(--animation);
+    margin-top: 30px;
+  
+}
+
+.form-icon-subscribe {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  /* position: absolute; */
+  /* top: 45%; */
+  /* left: 12px; */
+  cursor: pointer;
+  /* display: inline-block; */
+
+
+  /* align-items: center;
+  justify-content: center; */
+
+  /* border: 1px solid #000000; */
+  /* transform: rotate(90deg); */
+
 }
 /* Portfolio CSS */
 .filter-hover:hover,

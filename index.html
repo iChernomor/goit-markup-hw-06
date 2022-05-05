@@ -56,11 +56,49 @@
             для вашего бизнеса
           </h1>
           <button type="button" class="button" data-modal-open>Заказать услугу</button>
+          <!-- Sign Form -->
 
           <!-- Modalka-window -->
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button class="button-close" data-modal-close>
+              <h3 class="form-title">Оставьте свои данные, мы вам перезвоним</h3>
+              <form class="form js-speaker-form">
+                
+                  <label class="form-field">Имя
+                    <input type="text" name="name" placeholder=" " class="form-input">
+                    <span class="form-icon"></span>
+                    <svg class="form-icon-name"" width=" 18px" height="18px">
+                      <use href="./images/icons.svg#form-icon-name"></use>
+                  </label>
+                     <!-- пустой placeholder не работает, нужен ПРОБЕЛ -->
+                   <label class="form-field">Телефон
+                    <input type="tel" name="tel" placeholder=" " class="form-input">
+                    <span class="form-icon"></span>
+                    <svg class="form-icon-name"" width=" 18px" height="18px">
+                      <use href="./images/icons.svg#form-icon-tel"></use>
+                  </label>
+                  <label class="form-field ">Почта
+                    <input type="email" name="mail" placeholder=" " class="form-input">
+                    <span class="form-icon"></span>
+                    <svg class="form-icon-name form-icon" width=" 18px" height="18px">
+                      <use href="./images/icons.svg#form-icon-mail"></use>
+                  </label>
+                  <label class=" form-field comment">Комментарий
+                  <textarea name="comment" cols="auto" rows="10" placeholder="Введите текст" class="form-input"></textarea>
+                  </label>
+
+                  <label class="label agreement">
+                  <input type="checkbox" name="agreement" value="agreement" id="agreement" class="checkbox">
+                  <span class="checkbox-icon"></span>
+                  Соглашаюсь с рассылкой и принимаю <a href="">Условия
+                      договора</a></label>
+                  <button type="submit" 
+                  class="button-form">Отправить</button>
+                  </form>
+                
+                
+               
+               <button class="button-close" data-modal-close>
                 <svg class="icon-window-close" width="18px" height="18px">
                   <use href="./images/icons.svg#icon-window-close"></use>
                 </svg>
@@ -298,16 +336,21 @@
                 </svg><a href=""></a></li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <h3>Подпишись</h3>
+          <form action="">
+          <label class="form-field">
+            <input type="text" name="name" placeholder="E-mail" class="form-input">
+                       
+          </label>
+            <button type="submit" class="button-subscribe">Подписаться<svg class="form-icon-name" width=" 24px" height="24px">
+              <use href="./images/icons.svg#icon-footer-subscribe"></use></button>
+          </form>
+        </div>
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" >
-      <button data-modal-open>open</button>
-      <div class="modal" data-modal>
-    <p>dajldkajeraw</p>
-    <button data-modal-close>buy</button>
-      </div>
-    </div>
+  
     <script src="./js/modal.js"></script>
   </body>
 </html>
