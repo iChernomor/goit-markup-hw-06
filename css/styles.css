@@ -33,7 +33,6 @@ body {
 /* убрал точки */
 .about-title,
 .site-nav,
-/* .site-contact, */
 .footer,
 .card,
 .advantage,
@@ -91,8 +90,8 @@ img {
 }
 .header-pages {
     border-bottom: 1px solid #ECECEC;
-  /* outline: 2px solid #2196f3; */
 }
+
 /* Лого */
 .logo-blue {
   color: var(--accent-color);
@@ -169,10 +168,6 @@ img {
   display: block;
   
 }
-
-/* .site-nav .item:last-child {
-margin-right: 0;
-} - те саме що item + item*/
 
 .line-link {
   color: var(--accent-color);
@@ -278,9 +273,7 @@ margin-right: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #F5F4FA;
-  
-}
-
+  }
 
 /* Button */
 .button {
@@ -321,8 +314,7 @@ margin-right: 0;
   opacity: 1;
   transition: opacity var(--animation);
   z-index: 2;
- 
-}
+ }
 
 .is-hidden {
   opacity: 0;
@@ -341,9 +333,7 @@ margin-right: 0;
   transition: transform var(--animation);
   z-index: 3;
   padding: 40px;
-
 }
-
 
 .button-close {
   position: absolute;
@@ -384,9 +374,8 @@ margin-right: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.15;
-  /* identical to box height */
-    letter-spacing: 0.01em;
-    color: var(--secondary-text-color)
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color)
 }
 
 .form-title {
@@ -402,12 +391,11 @@ margin-right: 0;
 }
 .form-field {
   position: relative;
-  /* outline: 1px solid rgb(83, 13, 175); */
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-background: #FFFFFF;
-border-radius: 4px;
+  background: #FFFFFF;
+  border-radius: 4px;
 }
 
 .form-field input {
@@ -419,16 +407,13 @@ border-radius: 4px;
   padding: 10px 40px;
   display: flex;
   cursor: pointer;
-  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-  0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2); */
+  
 }
 
 .form-field input::placeholder {
   color: rgba(117, 117, 117, 0.5);
   
 }
-
 
 /* .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
@@ -452,16 +437,8 @@ border-radius: 4px;
   top: 50%;
   left: 12px;
   cursor: pointer;
-  /* display: inline-block; */
   width: 18px;
   height: 18px;
-
-  /* align-items: center;
-  justify-content: center; */
-
-  /* border: 1px solid #000000; */
-  /* transform: rotate(90deg); */
-
 }
 
 /* .form-input:focus ~ .form-icon {
@@ -485,10 +462,11 @@ transition: var(--animation);
   border-radius: 4px;
   resize: none;
 }
+
 .form-field textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
-
 }
+
 .checkbox {
   -webkit-appearance:none;
   -moz-appearance:none;
@@ -632,22 +610,20 @@ transition: var(--animation);
   font-size: 14px;
   line-height: 1.71;
   max-width: 270px;
-  /* margin-bottom: 94px; */
+
 }
 
 .foto {
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
+
 }
 .foto .list {
   width: 370px;
   margin-right: 30px;
   position: relative;
 }
-.foto-list :nth-child(3n) {
-  /* margin-right: 0; */
-}
+
 .foto-title {
   position: absolute;
   bottom: 0;
@@ -664,9 +640,7 @@ transition: var(--animation);
   justify-content: center;
   align-items: center;
 }
-.foto-img {
-  /* display: block; */
-}
+
 
 /* Team */
 .team-section {
@@ -699,14 +673,11 @@ transition: var(--animation);
   margin-bottom: 16px;
   /* margin-bottom: 94px; */
 }
-.team-inner {
-
-}
 
 .team {
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
+
 }
 
 .team-list {
@@ -715,7 +686,7 @@ transition: var(--animation);
   background-color: #ffffff;
   /* material shadow v1 */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
 }
@@ -749,14 +720,13 @@ transition: var(--animation);
 
 }
 
+
 /* Client */
+
 .client {
-  /* width: 170px;
-  height: 92px; */
   list-style: none;
   display: flex;
-  /* margin-top: 20px;
-      margin-bottom: 30px; */
+
 }
 
 .client .list {
@@ -777,7 +747,6 @@ transition: var(--animation);
 }
 .client-link:hover,
 .client-link:focus {
-  /* border: 1px solid var(--accent-color); */
 color: var(--accent-color);
 border-color: var(--accent-color);
 } 
@@ -800,7 +769,6 @@ border-color: var(--accent-color);
   margin-right: 10px;
   margin-left: 32px;
   margin-bottom: 30px;
-  /* justify-content: space-between; */
 }
 .social :nth-last-child(){
   margin-right: 0;
@@ -868,10 +836,7 @@ fill: #fff;
   /* margin-bottom: 9px; */
   transition: color var(--animation);
 }
-.footer-social {
 
-
-}
 .social-title {
   font-family: "Roboto";
   font-weight: bold;
@@ -888,8 +853,6 @@ fill: #fff;
   display: flex;
   margin-top: 20px;
   margin-bottom: 30px;
-
-
 }
 
 .foot-social :nth-last-child() {
@@ -908,7 +871,6 @@ fill: #fff;
   height: 20px;
   fill: #fff;
   display: flex;
-
 }
 
 .foot-soc-link {
@@ -920,7 +882,6 @@ fill: #fff;
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.1);
   transition: background-color var(--animation);
-
 }
 
 .foot-soc-link:hover,
@@ -932,61 +893,56 @@ fill: #fff;
 .social-link:focus .socia-icon {
   fill: var(--accent-color);
 }
-  /* Subscribe */
-  .footer-subscribe {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    margin-left: 93px;
-  /* outline: 1px solid tomato; */
-    
-  }
-    .form-subscribe {
-      /* display: flex; */
-      width: 100%;
-      /* outline: 1px solid rgb(13, 165, 20); */
-      /* margin-left: auto;
-    margin-right: auto; */
-      padding-top: 20px;
-      font-family: 'Roboto';
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 1.15;
-      letter-spacing: 0.01em;
-    }
-    .form-field-subscribe {
-      position: relative;
-  
-      display: flex;
-      margin-bottom: 10px;
-      border-radius: 4px;
-    }
-  .button-subscribe {
-    position: absolute;
-    color: var(--white-color-text);
-    background-color: var(--accent-color);
-    margin: 0 auto;
-     font-family: "Roboto";
-    padding-top: 10px;
-    padding-bottom: 10px;
 
-    /* display: flex; */
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 4px;
-    min-width: 200px;
-    border: transparent;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    transition: background-color var(--animation),
-      color var(--animation);
+  /* Subscribe */
+.footer-subscribe {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-left: 93px;
+/* outline: 1px solid tomato; */
+  
+}
+  .form-subscribe {
+  width: 100%;
+  padding-top: 20px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
   }
+  .form-field-subscribe {
+    position: relative;
+
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+.button-subscribe {
+  position: absolute;
+  color: var(--white-color-text);
+  background-color: var(--accent-color);
+  margin: 0 auto;
+  font-family: "Roboto";
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 4px;
+  min-width: 200px;
+  border: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color var(--animation),
+  color var(--animation);
+}
 
 .button-subscribe:hover,
 .button-subscribe:focus {
@@ -1020,9 +976,7 @@ fill: #fff;
   color: var(--white-color-text);
   text-transform:uppercase;
   margin-top: 10px;
- 
 }
-
 
 .form-field-subscribe input {
   width: 358px;
@@ -1084,7 +1038,6 @@ fill: #fff;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  /* identical to box height, or 162% */
   text-align: center;
   cursor: pointer;
   margin-right: 8px;
@@ -1105,12 +1058,10 @@ fill: #fff;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-
 }
 .card {
   display: flex;
   flex-wrap: wrap;
-
 }
 .card-list {
   width: 370px;
