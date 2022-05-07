@@ -340,7 +340,7 @@ margin-right: 0;
   background-color: #ffffff;
   transition: transform var(--animation);
   z-index: 3;
-  /* margin: 40px; */
+  padding: 40px;
 
 }
 
@@ -379,7 +379,7 @@ margin-right: 0;
   outline: 1px solid rgb(13, 165, 20);
   margin-left: auto;
   margin-right: auto;
-  padding: 40px;
+
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 12px;
@@ -397,7 +397,7 @@ margin-right: 0;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  padding-top: 40px;
+  padding-bottom: 12px;
 
 }
 .form-field {
@@ -429,9 +429,7 @@ border-radius: 4px;
   
 }
 
-.fotm-options input[type='checkbox'] {
 
-}
 /* .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
   transform: translateY(-50px);
@@ -935,51 +933,132 @@ fill: #fff;
   fill: var(--accent-color);
 }
   /* Subscribe */
-  .button-subscribe {
+  .footer-subscribe {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-left: 93px;
+  /* outline: 1px solid tomato; */
+    
+  }
+    .form-subscribe {
+      /* display: flex; */
+      width: 100%;
+      /* outline: 1px solid rgb(13, 165, 20); */
+      /* margin-left: auto;
+    margin-right: auto; */
+      padding-top: 20px;
+      font-family: 'Roboto';
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.15;
+      letter-spacing: 0.01em;
+    }
+    .form-field-subscribe {
+      position: relative;
   
+      display: flex;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+  .button-subscribe {
+    position: absolute;
     color: var(--white-color-text);
     background-color: var(--accent-color);
     margin: 0 auto;
-    display: block;
-    font-family: "Roboto";
-    padding: 10px 55px;
+     font-family: "Roboto";
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     border-radius: 4px;
     min-width: 200px;
     border: transparent;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    /* display: flex; */
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     transition: background-color var(--animation),
       color var(--animation);
-    margin-top: 30px;
-  
+  }
+
+.button-subscribe:hover,
+.button-subscribe:focus {
+  color: var(--accent-color);
+  background-color: var(--white-color-text);
+  transition: color var(--animation);
+}
+
+.button-subscribe:hover .form-icon-subscribe,
+.button-subscribe:focus .form-icon-subscribe {
+  fill: var(--accent-color);
+  transition: color var(--animation);
 }
 
 .form-icon-subscribe {
   margin: 0 auto;
   padding: 0;
-  display: flex;
-  /* position: absolute; */
-  /* top: 45%; */
-  /* left: 12px; */
   cursor: pointer;
-  /* display: inline-block; */
-
-
-  /* align-items: center;
-  justify-content: center; */
-
-  /* border: 1px solid #000000; */
-  /* transform: rotate(90deg); */
-
+  fill: currentColor;
 }
+
+.subscribe-title {
+  position: relative;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  display: flex;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--white-color-text);
+  text-transform:uppercase;
+  margin-top: 10px;
+ 
+}
+
+
+.form-field-subscribe input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 16px;
+  background-color: transparent;
+  margin-right: 12px;
+  outline: none;
+  color: #ffffff;
+  transition: border-color var(--animation);
+
+} 
+.form-icon-subscribe {
+  position: absolute;
+  top: 25%;
+  left: 80%;
+  cursor: pointer;
+  fill: var(--white-color-text);
+}
+
+
+.form-input-subscribe:focus{
+/* .form-input-subscribe:hover  */
+  border-color: var(--accent-color);
+  color: #2f303a;
+}
+.form-input-subscribe input::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+ margin: 0;
+ padding: 0;
+}
+
 /* Portfolio CSS */
 .filter-hover:hover,
 .filter-hover:focus {
@@ -990,7 +1069,6 @@ fill: #fff;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  /* identical to box height, or 162% */
   text-align: center;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
   0px 1px 2px rgba(0, 0, 0, 0.08),
