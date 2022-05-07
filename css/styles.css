@@ -463,6 +463,7 @@ transition: var(--animation);
   box-sizing: border-box;
   border-radius: 4px;
   resize: none;
+
 }
 
 .form-field textarea::placeholder {
@@ -1010,12 +1011,20 @@ fill: #fff;
   cursor: pointer;
   fill: var(--white-color-text);
 }
-
-
+.form-input-subscribe {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+    
 .form-input-subscribe:focus{
 /* .form-input-subscribe:hover  */
   border-color: var(--accent-color);
-  color: #2f303a;
+
+  color: var(--white-color-text);
 }
 .form-input-subscribe input::placeholder {
   color: rgba(117, 117, 117, 0.5);
